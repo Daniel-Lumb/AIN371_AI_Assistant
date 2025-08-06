@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Teaching Assistant - PMM</title>
+  <link rel="stylesheet" href="frontend/styles.css"/>
+  <script defer src="frontend/chatbot.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar glass">
+    <div class="logo">TutorBuddy PMM</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Topics</a></li>
+      <li><a href="#">Assignments</a></li>
+      <li><a href="#">Quiz</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="content">
+    <h1>Welcome to your PMM Tutor Buddy</h1>
+    <p>Your AI assistant for mastering Project management.</p>
+  </main>
+
+  <!-- Chatbot Widget -->
+  <section class="chatbot glass">
+    <div class="chat-header">Ask me anything 📘</div>
+    <div id="chat-window"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Ask a question..." required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>
