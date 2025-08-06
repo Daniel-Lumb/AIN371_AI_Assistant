@@ -1,0 +1,78 @@
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-navbar .nav-link {
+  color: rgb(0, 0, 0);
+  transition: color 0.2s ease;
+}
+
+.glass-navbar .nav-link:hover,
+.glass-navbar .nav-link.active {
+  color: #003cff; 
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+  transform: scale(1.05);
+  border-color: rgba(0, 123, 255, 0.6);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 123, 255, 0.6); 
+}
+
+.member-role {
+  color: rgba(0, 123, 255, 0.85); 
+  font-weight: 600; 
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.search-bar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.6); 
+}
+
+.event-card {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+
+  .event-card:hover {
+    box-shadow: 0 8px 200px rgba(0, 123, 255, 0.6);
+    transform: translateY(-5px);
+  }

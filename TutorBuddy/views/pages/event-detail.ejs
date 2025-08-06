@@ -1,0 +1,31 @@
+<body class="d-flex flex-column min-vh-100">
+<%- include('../partials/header') %>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src="<%= event.Image %>" class="img-fluid rounded" alt="<%= event.title %>">
+    </div>
+    <div class="col-lg-6">
+      <h2 class="text-primary"><%= event.title %></h2>
+      <p class="mt-3"><%= event.description %></p>
+      <ul class="list-unstyled mt-4">
+        <li><strong>Date:</strong> <%= event.date %></li>
+        <li><strong>Time:</strong> <%= event.time %></li>
+        <li><strong>Location:</strong> <%= event.location %></li>
+      </ul>
+      <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+  <a href="/events" class="btn btn-outline-primary">
+    ← Back to Modules
+  </a>
+  <a href="/contact?message=<%= encodeURIComponent('I am interested in the event: ' + event.title) %>" class="btn btn-outline-primary">
+    Contact Us About This Module
+  </a>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+<%- include('../partials/footer') %>
+</body>

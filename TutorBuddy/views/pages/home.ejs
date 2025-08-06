@@ -1,0 +1,40 @@
+<body class="d-flex flex-column min-vh-100">
+  <%- include('../partials/header') %>
+
+  <main class="flex-fill">
+    <div class="container mt-5 text-center">
+      <h1 class="display-4 text-primary">TutorBuddy</h1>
+      <p class="lead mt-3">Study alongside our new TutorBuddy for Project Management.</p>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center text-primary mb-4">Modules</h2>
+      <div class="row">
+        <% eventDetails.forEach(event => { %>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/events/<%= event.id %>" class="text-decoration-none text-dark">
+              <div class="card h-100 shadow-sm event-card">
+                <img src="<%= event.Image %>" class="card-img-top" alt="<%= event.title %>">
+                <div class="card-body">
+                  <h5 class="card-title"><%= event.title %></h5>
+                  <p class="card-text"><%= event.description %></p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Date:</strong> <%= event.date %></li>
+                  <li class="list-group-item"><strong>Time:</strong> <%= event.time %></li>
+                  <li class="list-group-item"><strong>Location:</strong> <%= event.location %></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        <% }) %>
+      </div>
+
+      <div class="text-center mt-4 mb-5"> <!-- Added mb-5 for bottom margin -->
+        <a href="/events" class="btn btn-outline-primary">View All Modules</a>
+      </div>
+    </div>
+  </main>
+
+  <%- include('../partials/footer') %>
+</body>
