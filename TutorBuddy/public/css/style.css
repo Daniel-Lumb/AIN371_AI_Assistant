@@ -76,3 +76,53 @@
     box-shadow: 0 8px 200px rgba(0, 123, 255, 0.6);
     transform: translateY(-5px);
   }
+
+  /* Glass style for chatbot */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+/* Chatbot styling */
+.chatbot {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: #000000;
+}
+
+.chatbot input, .chatbot button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+#chat-window {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.user-msg {
+  text-align: right;
+  color: lightgreen;
+  margin-bottom: 5px;
+}
+
+.bot-msg {
+  text-align: left;
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
