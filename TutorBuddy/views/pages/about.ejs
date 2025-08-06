@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+<div class="container mt-5">
+  <h2 class="text-center text-primary mb-4">Meet the Team</h2>
+  <div class="row">
+    <% teamMembers.forEach(member => { %>
+      <div class="col-md-3 mb-4">
+  <div class="card h-100 glass-card text-black text-center">
+    <img src="<%= member.image %>" class="card-img-top" alt="<%= member.name %>">
+    <div class="card-body">
+      <h5 class="card-title"><%= member.name %></h5>
+      <p class="member-role"><%= member.role %></p>
+      <p class="card-text text-black"><%= member.bio %></p>
+    </div>
+  </div>
+</div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>
