@@ -9,17 +9,17 @@ const constact = require('../models/contact');
 // Global event details array (accessible by all routes)
 const eventDetails = [
   {
-    id: "art-workshop",
-    title: "Art Workshop",
-    description: "Join us for a fun and creative art workshop where you can learn new techniques and express your creativity.", 
-    Image: "/images/art-workshop.jpg",
+    id: "Lesson 1",
+    title: "Lesson 1",
+    description: "Chapter 1: Defining Innovation Leadership & the CREATE Model.", 
+    Image: "/images/coding-bootcamp.jpg",
     date: "2023-10-15",
     time: "10:00 AM - 2:00 PM",
     location: "Community Center, Room 101"
   },
   {
-    id: "tech-talk",
-    title: "Tech Talk",
+    id: "Lesson 2",
+    title: "Lesson 2",
     description: "Join us for an insightful tech talk on the latest trends in technology and innovation.",
     Image: "/images/tech-talk.jpg",
     date: "2023-10-20",
@@ -27,28 +27,28 @@ const eventDetails = [
     location: "Community Center, Room 202"
   },
   {
-    id: "cooking-class",
-    title: "Cooking Class",
+    id: "Lesson 3",
+    title: "Lesson 3",
     description: "Learn to cook delicious meals with our expert chef in this interactive cooking class.",
-    Image: "/images/cooking-class.jpg",
+    Image: "/images/coding-bootcamp.jpg",
     date: "2023-10-25",
     time: "5:00 PM - 7:00 PM",
     location: "Community Center, Kitchen"
   },
   {
-    id: "yoga-session",
-    title: "Yoga Session",
+    id: "Lesson 4",
+    title: "Lesson 4",
     description: "Relax and rejuvenate with our yoga session led by a certified instructor.",
-    Image: "/images/yoga-session.jpg",
+    Image: "/images/coding-bootcamp.jpg",
     date: "2023-10-30",
     time: "6:00 PM - 7:00 PM",
     location: "Community Center, Room 303"
   },
   {
-    id: "book-club",
-    title: "Book Club",
+    id: "Lesson 5",
+    title: "Lesson 5",
     description: "Join our book club to discuss this month's book selection and share your thoughts with fellow readers.",
-    Image: "/images/book-club.jpg",
+    Image: "/images/tech-talk.jpg",
     date: "2023-11-05",
     time: "3:00 PM - 5:00 PM",
     location: "Community Center, Room 404"
