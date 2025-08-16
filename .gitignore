@@ -134,3 +134,5 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+ain-test-file-firebase-adminsdk-fbsvc-3e87bd44f9.json
