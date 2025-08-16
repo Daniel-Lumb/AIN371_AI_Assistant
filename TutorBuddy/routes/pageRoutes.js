@@ -110,13 +110,13 @@ router.get('/about', (req, res) => {
       name: "Jamie Palmer",
       role: "Backend Developer",
       bio: "Builds scalable backend systems and database logic.",
-      image: "/images/"
+      image: "/images/jamie.jpg"
     },
     {
       name: "Arnold Paulsen",
       role: "Data Manager",
       bio: "Ensures data flows smoothly between components.",
-      image: "/images/"
+      image: "/images/arnold.jpg"
     },
     {
       name: "Ettienne Janse van vuuren",
