@@ -107,7 +107,9 @@
   border-radius: 0.5rem;
   border: none;
 }
-
+.chatbot button:hover {
+  background: rgba(0, 123, 255, 0.712); 
+}
 #chat-window {
   max-height: 200px;
   overflow-y: auto;
